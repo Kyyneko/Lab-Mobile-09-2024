@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:id="@+id/main">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="2dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="start"/>
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_black_1000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="User Mahengram"
+        android:paddingBottom="12dp"
+        android:layout_toEndOf="@id/iv_image"
+        android:layout_marginStart="10dp"
+        android:layout_alignBottom="@id/iv_image" />
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/iv_post"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/iv_image"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Icons: Like, Comment, Share -->
+    <LinearLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_post"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp">
+
+        <!-- Like -->
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_like"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Comment -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comment"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Share -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+    <!-- Caption -->
+    <TextView
+        android:id="@+id/tv_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_black_1000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:text="Caption Postingan Instagram yang Panjang Panjang dan Menarik"
+        android:layout_below="@id/icon_layout"
+        android:layout_marginStart="10dp"
+        android:gravity="start"/>
+
+</RelativeLayout>

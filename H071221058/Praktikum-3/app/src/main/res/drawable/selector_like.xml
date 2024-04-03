@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/like_pink" android:state_pressed="true" /> <!-- Gambar saat ditekan -->
+    <item android:drawable="@drawable/like" /> <!-- Gambar default -->
+</selector>
